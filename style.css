@@ -16,7 +16,7 @@ body {
     align-items: center;
     background-color: #4169E1; /* Azul claro */
     padding: 10px 20px;
-    font-family: Arial, sans-serif;
+    font-family: times, sans-serif;
     position: relative;
     z-index: 2;
 }
@@ -87,7 +87,7 @@ h1, h2 {
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: 'Alice', serif;
-  font-size: 39.5px;
+  font-size: 100px;
   color: black; /* ou outra cor de sua preferência */
 }
 
