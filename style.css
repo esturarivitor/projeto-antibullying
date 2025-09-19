@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Anonymous Pro', 'Source Code Pro', 'Fira Code', 'JetBrains Mono', 'Cascadia Code', Arial, sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin: 0;
+    line-height: 1.5;
+    background-color: rgb(44, 42, 39);
+}
+
