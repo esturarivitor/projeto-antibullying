@@ -37,8 +37,6 @@ nav {
     justify-content: space-around;
 }
 
-
-
 nav a {
     text-decoration: none;
     color: black;
@@ -73,49 +71,37 @@ main {
 main h1 {
     color: #ff4500;
     text-shadow: 1px 1px 2px gray;
-    margin-bottom: 100px;
-    text-size-adjust: 50px;
-    font-size: 50px;
+    margin-bottom: 50px;
+    font-size: 52px;
 }
 
-main p {
-    max-width: 1000px;
-    margin: 0 auto 30px;
-    text-align: justify;
-    font-size: 16px;
+/* Container para texto + imagem */
+.conteudo {
+    display: flex;
+    align-items: flex-start; /* alinha pelo topo */
+    justify-content: space-between;
+    gap: 30px; /* espaço entre texto e imagem */
+    padding: 20px;
+}
+
+/* Texto à esquerda */
+.canto {
+    flex: 1;
+    font-size: 29px;
     line-height: 1.6;
-    color: #333;
+    text-align:justify;
+    margin-right: 40px;
 }
 
-/* Imagem */
-main img {
-    position: absolute;
-    width: 700px;
+/* Imagem à direita */
+.conteudo img {
+    max-width: 870px;
+    width: 100%;
     border: 3px solid #ff4500;
     border-radius: 10px;
     box-shadow: 0 0 15px #ff9966;
-    left: 1000px;
-    top: 325px;
-}
-.canto {
-    position: absolute;
-    top: 300px;
-    right: 1100px;
-    left: 100px;
-    font-size: 30px;
-}
-.info {
-    position: absolute;
-    top: 1000px;
-    right: 1100px;
-    left: 100px;
-    font-size: 30px;
 }
 
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
 /* Botão do Chat */
 .chat-button {
     position: fixed;
@@ -129,7 +115,6 @@ body {
     align-items: center;
     cursor: pointer;
     box-shadow: 0px 4px 6px rgba(0,0,0,0.3);
-    
 }
 
 .chat-button img {
@@ -197,4 +182,34 @@ body {
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 5px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main h1 {
+        font-size: 35px;
+    }
+
+    .conteudo {
+        flex-direction: column; /* em telas pequenas, texto e imagem ficam um abaixo do outro */
+        align-items: center;
+    }
+
+    .conteudo img {
+        max-width: 90%;
+    }
+
+    .chat-box {
+        width: 280px;
+    }
+
+    .logo {
+        font-size: 16px;
+        padding: 8px 12px;
+    }
 }
