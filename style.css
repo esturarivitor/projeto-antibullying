@@ -21,14 +21,17 @@ header {
     flex-wrap: wrap;
 }
 
-.logo {
+/* Logo com link */
+.logo a {
+    text-decoration: none;  /* tira o sublinhado */
+    color: #ff4500;
     font-weight: bold;
+    font-size: 18px;
     border: 2px solid #ff4500;
     padding: 10px 15px;
-    color: #ff4500;
-    font-size: 18px;
     border-radius: 8px;
     background-color: white;
+    display: inline-block; /* faz o link se comportar como bloco */
 }
 
 nav {
@@ -36,8 +39,6 @@ nav {
     display: flex;
     justify-content: space-around;
 }
-
-
 
 nav a {
     text-decoration: none;
@@ -73,49 +74,37 @@ main {
 main h1 {
     color: #ff4500;
     text-shadow: 1px 1px 2px gray;
-    margin-bottom: 100px;
-    text-size-adjust: 50px;
+    margin-bottom: 60px;
     font-size: 50px;
 }
 
-main p {
-    max-width: 1000px;
-    margin: 0 auto 30px;
-    text-align: justify;
-    font-size: 16px;
-    line-height: 1.6;
-    color: #333;
+/* Container texto + imagem */
+.conteudo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 20px;
 }
 
-/* Imagem */
-main img {
-    position: absolute;
-    width: 700px;
+/* Texto à esquerda */
+.canto {
+    flex: 1;
+    font-size: 29px;
+    line-height: 1.6;
+    text-align:justify;
+    margin-right: 40px;
+}
+
+/* Imagem à direita */
+.conteudo img {
+    max-width: 900px;
+    width: 100%;
     border: 3px solid #ff4500;
     border-radius: 10px;
     box-shadow: 0 0 15px #ff9966;
-    left: 1000px;
-    top: 325px;
-}
-.canto1 {
-    position: absolute;
-    top: 300px;
-    right: 650px;
-    left: 100px;
-    font-size: 20px;
-}
-.info {
-    position: absolute;
-    top: 1000px;
-    right: 1100px;
-    left: 100px;
-    font-size: 30px;
 }
 
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
 /* Botão do Chat */
 .chat-button {
     position: fixed;
@@ -129,7 +118,6 @@ body {
     align-items: center;
     cursor: pointer;
     box-shadow: 0px 4px 6px rgba(0,0,0,0.3);
-    
 }
 
 .chat-button img {
@@ -197,4 +185,87 @@ body {
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 5px;
+}
+
+/*--- TESTE ---*/
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Cabeçalho */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  border-bottom: 2px solid #000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #f15a24;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.icons img {
+  width: 25px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+/* Conteúdo principal */
+.conteudo {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  gap: 30px;
+}
+
+/* Texto */
+.texto {
+  flex: 2;
+  text-align: justify;
+}
+
+.texto h1 {
+  color: #f15a24;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.texto h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+/* Imagem e lista */
+.imagem-lado {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imagem-lado img {
+  max-width: 100%;
+  border: 5px solid #f15a24;
+  border-radius: 5px;
+}
+
+.lista {
+  margin-top:auto;
 }
