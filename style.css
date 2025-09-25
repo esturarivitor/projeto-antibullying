@@ -1,0 +1,275 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eee;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-bottom: 2px solid #000;
+    flex-wrap: wrap;
+}
+
+/* Logo com link */
+.logo a {
+    text-decoration: none;  /* tira o sublinhado */
+    color: #ff4500;
+    font-weight: bold;
+    font-size: 18px;
+    border: 2px solid #ff4500;
+    padding: 10px 15px;
+    border-radius: 8px;
+    background-color: white;
+    display: inline-block; /* faz o link se comportar como bloco */
+}
+
+nav {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+/* Barra de busca com ícone */
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-container input {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.search-container i {
+    color: #4b0082;
+    font-size: 20px;
+}
+
+/* Main */
+main {
+    padding: 40px 20px;
+    background-color: #eee;
+    text-align: center;
+}
+
+main h1 {
+    color: #ff4500;
+    text-shadow: 1px 1px 2px gray;
+    margin-bottom: 60px;
+    font-size: 50px;
+}
+
+/* Container texto + imagem */
+.conteudo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 20px;
+}
+
+/* Texto à esquerda */
+.canto {
+    flex: 1;
+    font-size: 29px;
+    line-height: 1.6;
+    text-align:justify;
+    margin-right: 40px;
+    text-indent: 30px; /* Ajuste o valor conforme desejar */
+    line-height: 1.6; /* Opcional: deixa o texto mais legível */
+}
+
+
+
+/* Imagem à direita */
+.conteudo img {
+    max-width: 900px;
+    width: 100%;
+    border: 3px solid #ff4500;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #ff9966;
+}
+
+/* Botão do Chat */
+.chat-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    border-radius: 90%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.3);
+}
+
+.chat-button img {
+    width: 50px;
+    border-radius: 90%;
+}
+
+/* Caixa do Chat */
+.chat-box {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 320px;
+    max-height: 400px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.3);
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.chat-header {
+    background: #fa6632;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-body {
+    padding: 10px;
+    flex: 1;
+    overflow-y: auto;
+}
+
+.chat-body p {
+    background: #f1f1f1;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 5px 0;
+}
+
+.chat-body button {
+    display: block;
+    margin: 8px 0;
+    padding: 8px 12px;
+    background: #fa6632;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.chat-footer {
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.chat-footer input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/*--- TESTE ---*/
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Cabeçalho */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  border-bottom: 2px solid #000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #f15a24;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.icons img {
+  width: 25px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+/* Conteúdo principal */
+.conteudo {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  gap: 30px;
+}
+
+/* Texto */
+.texto {
+  flex: 2;
+  text-align: justify;
+}
+
+.texto h1 {
+  color: #f15a24;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.texto h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+/* Imagem e lista */
+.imagem-lado {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imagem-lado img {
+  max-width: 100%;
+  border: 5px solid #f15a24;
+  border-radius: 5px;
+}
+
+.lista {
+  margin-top:auto;
+}
