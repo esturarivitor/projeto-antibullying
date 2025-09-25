@@ -273,3 +273,42 @@ main h1 {
 .lista {
   margin-top:auto;
 }
+
+/* Para ecrãs com menos de 768px de largura */
+@media (max-width: 768px) {
+  .container {
+      width: 90%; /* Ocupa 90% da largura da tela */
+  }
+}
+
+/* 📱 RESPONSIVIDADE */
+@media (max-width: 900px) {
+  .container {
+      flex-direction: column;
+      /* empilha um embaixo do outro */
+      margin-top: 5%;
+  }
+
+  .half {
+      padding: 40px 20px;
+  }
+
+  .half h1 {
+      font-size: 1.6em;
+  }
+
+  .half p {
+      font-size: 1em;
+  }
+
+  nav {
+      text-align: center;
+      /* centraliza menu no mobile */
+  }
+
+  nav ul li {
+      display: block;
+      /* links um embaixo do outro */
+      margin: 10px 0;
+  }
+}
