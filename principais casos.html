@@ -2,25 +2,161 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Vozes Unidas</title>
-    <link rel="stylesheet" href="style.css">
-    
-    <!-- Ícone do boneco (Font Awesome) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Principais Casos - Vozes Unidas</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        /* ====== Cabeçalho ====== */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ff7b00;
+            padding: 15px 40px;
+            color: white;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header .logo a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.8em;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffe082;
+        }
+
+        .search-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .search-container input {
+            padding: 7px 10px;
+            border-radius: 20px;
+            border: none;
+            outline: none;
+            width: 140px;
+        }
+
+        .search-container i {
+            font-size: 1.3em;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        .search-container i:hover {
+            color: #ffe082;
+        }
+
+        /* ====== Corpo Principal ====== */
+        main {
+            padding: 50px 25px;
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #fff;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 40px;
+            font-size: 2.2em;
+        }
+
+        .case {
+            background-color: #fff6ef;
+            border-left: 6px solid #ff7b00;
+            margin-bottom: 25px;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .case h2 {
+            color: #ff7b00;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+
+        .case p {
+            color: #333;
+            line-height: 1.7;
+            margin-bottom: 10px;
+            text-align: justify;
+        }
+
+        /* ====== Rodapé ====== */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #ff7b00;
+            color: white;
+            margin-top: 40px;
+            font-size: 0.9em;
+        }
+    </style>
 </head>
 <body>
     <header>
         <div class="logo">
-            <a href="inicial.html">VOZES UNIDAS</a> <!-- Agora é um atalho para inicial.html -->
+            <a href="inicial.html">VOZES UNIDAS</a>
         </div>
         <nav>
             <a href="informacoes.html">Informações</a>
             <a href="principais casos.html">Principais casos</a>
-            <a href="quiz">Quiz</a>
-            <a href="me ajudar!">Me ajuda!</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="me ajudar.html">Me ajuda!</a>
         </nav>
         <div class="search-container">
             <input type="text" placeholder="Buscar...">
             <i class="fas fa-user"></i>
         </div>
     </header>
+
+    <main>
+        <h1>Principais Casos de Bullying e Cyberbullying</h1>
+
+        <section class="case">
+            <h2>1° Caso - Colégio Bandeirantes</h2>
+            <p>No Colégio Bandeirantes, um dos mais renomados de São Paulo, um grupo de estudantes foi suspenso após disseminar mensagens ofensivas e discriminatórias em um grupo de WhatsApp. O caso gerou debates sobre responsabilidade digital e respeito nas redes sociais.</p>
+        </section>
+
+        <section class="case">
+            <h2>2° Caso - Escola Estadual do Rio de Janeiro</h2>
+            <p>Um estudante de 14 anos foi vítima de bullying constante, sendo alvo de apelidos pejorativos e humilhações. O caso veio à tona após um vídeo circular nas redes sociais, levando a escola a adotar medidas disciplinares e ações de conscientização.</p>
+        </section>
+
+        <section class="case">
+            <h2>3° Caso - Colégio Militar de Brasília</h2>
+            <p>Um grupo de alunos criou perfis falsos para zombar de colegas. Após a denúncia, a direção realizou palestras e campanhas educativas sobre o impacto psicológico do bullying e a importância da empatia no convívio escolar.</p>
+        </section>
+
+        <section class="case">
+            <h2>4° Caso - Colégio Santa Cruz</h2>
+            <p>No Colégio Santa Cruz, um dos mais tradicionais de São Paulo, um caso de cyberbullying veio à tona no fim de janeiro, envolvendo 34 alunos.</p>
+            <p>Os estudantes foram suspensos por participarem de um grupo de WhatsApp que promovia cyberbullying, racismo e homofobia. A situação se agravou a ponto de a escola expulsar quatro dos alunos mais ativos no grupo, evidenciando a gravidade das ofensas.</p>
+            <p>As famílias dos alunos expressaram indignação em relação ao ocorrido, manifestando preocupação com a cultura de violência dentro da escola. Elas ressaltaram a necessidade urgente de um ambiente escolar mais seguro e acolhedor, onde todos os estudantes possam se sentir respeitados e protegidos.</p>
+            <p>Em abril de 2011, a revista VEJA publicou uma reportagem que abordou o bullying nas escolas, trazendo à tona uma série de depoimentos pungentes de vítimas que enfrentaram tortura física e psicológica por parte de colegas.</p>
+            <p>Os relatos coletados na reportagem revelaram experiências devastadoras de jovens que foram alvo de agressões e humilhações constantes. As vítimas descreveram situações de isolamento, intimidação e violência, que afetaram profundamente sua saúde mental e emocional.</p>
+            <p>Os depoimentos geraram uma onda de indignação e empatia, destacando a urgência de se combater o bullying nas escolas. A reportagem chamou a atenção de pais, educadores e autoridades para a necessidade de implementar medidas de prevenção e apoio às vítimas, além de promover um ambiente escolar mais seguro e acolhedor. A discussão sobre o tema se intensificou, levando a um maior engajamento da sociedade na busca por soluções eficazes.</p>
+        </section>
+    </main>
+
+    <footer>
+        © 2025 Vozes Unidas — Todos os direitos reservados.
+    </footer>
+</body>
+</html>
