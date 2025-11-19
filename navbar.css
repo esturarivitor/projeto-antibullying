@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Anonymous Pro', 'Source Code Pro', 'Fira Code', 'JetBrains Mono', 'Cascadia Code', Arial, sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.head{
+    display: flex;
+    flex-direction: row;
+}
+
+.logo {
+    font-weight: bold;
+    border: 2px solid #ff4500;
+    padding: 10px 15px;
+    color: #ff4500;
+    font-size: 18px;
+    border-radius: 8px;
+    background-color: white;
+}
+/* NAV */
+nav {
+    background: linear-gradient(38deg,  #2e2a2e, #4b2222, #20191a, rgb(50, 13, 26), #381515);
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: end;
+    font-weight: bolder;
+  }
+
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 25px 0;
+} 
+
+nav ul li {
+    display:inline;
+    margin: 0 15px;
+    justify-items: center;
+    
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 16px;
+    position: relative; 
+    z-index: 2;
+}
+
+nav ul li a:hover {
+    font-size: 18px;
+    color: #d45eba;
+}
