@@ -1,0 +1,144 @@
+
+
+/* Pequena interação visual */
+.search-box:focus {
+    border-color: #888;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+/* 📱 RESPONSIVIDADE */
+@media (max-width: 900px) {
+    .canto {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #imagem1, .canto p {
+        width: 90%;
+    }
+
+    .conteudo h1 {
+        font-size: 1.4rem;
+        margin: 0 10px;
+    }
+
+    /* 🔍 Ajuste da pesquisa em telas pequenas */
+    .search-wrapper {
+        position: static;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .search-box {
+        width: 90%;
+        max-width: 300px;
+        font-size: 1rem;
+    }
+}
+
+/* ===== Monitores full HD grandes (acima de 1600px) ===== */
+@media (min-width: 1600px) {
+    .conteudo {
+        max-width: 1400px;
+    }
+
+    .texto h2 {
+        font-size: 2.6rem;
+    }
+
+    .texto p {
+        font-size: 1.2rem;
+    }
+
+    .imagem img {
+        max-width: 600px;
+    }
+
+    /* 🔍 Ajuste leve da posição da pesquisa */
+    .search-wrapper {
+        right: 30px;
+        top: 15px;
+    }
+
+    .search-box {
+        padding: 10px 14px;
+        font-size: 1.1rem;
+    }
+}
+
+/* ===== Monitores ultrawide (acima de 2000px) ===== */
+@media (min-width: 2000px) {
+    body {
+        background: linear-gradient(90deg, #0a0a0a 20%, #111 80%);
+    }
+
+    .conteudo {
+        max-width: 1800px;
+        padding: 3rem 4rem;
+    }
+
+    .texto-imagem {
+        gap: 5rem;
+    }
+
+    .texto {
+        font-size: 1.25rem;
+    }
+
+    .imagem img {
+        max-width: 750px;
+    }
+
+    /* 🔍 Reposiciona a pesquisa */
+    .search-wrapper {
+        right: 50px;
+        top: 20px;
+    }
+
+    .search-box {
+        padding: 12px 16px;
+        font-size: 1.2rem;
+    }
+}
+
+/* ===== Monitores 4K (acima de 2560px) ===== */
+@media (min-width: 2560px) {
+    html {
+        font-size: 120%;
+    }
+
+    .conteudo {
+        max-width: 2200px;
+    }
+
+    .texto h2 {
+        font-size: 3rem;
+    }
+
+    .texto p {
+        font-size: 1.4rem;
+        line-height: 1.9;
+    }
+
+    .navbar {
+        padding: 2rem 6rem;
+    }
+
+    .rodape {
+        font-size: 1.1rem;
+    }
+
+    /* 🔍 Pesquisa mais destacada em 4K */
+    .search-wrapper {
+        right: 80px;
+        top: 30px;
+    }
+
+    .search-box {
+        padding: 14px 18px;
+        font-size: 1.3rem;
+        border-radius: 12px;
+    }
+}
+
