@@ -1,0 +1,96 @@
+/* 🔝 Estilo da Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  border-bottom: 2px solid #ddd;
+  padding: 10px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.logo {
+  font-weight: bold;
+  color: #ff4500;
+  border: 2px solid #ff4500;
+  padding: 5px 10px;
+  border-radius: 6px;
+}
+
+.navbar-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.navbar-center a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.navbar-center a.active {
+  color: red;
+  border: 1px solid red;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-right input {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* 🧠 Estilo da Página "Me ajuda!" */
+.container {
+  display: flex;
+  gap: 30px;
+  padding: 30px 20px;
+  font-family: Arial, sans-serif;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.text-content {
+  flex: 2;
+}
+
+.text-content h2 {
+  color: #ff6600;
+}
+
+.text-content h3 {
+  color: #cc3300;
+  margin-top: 20px;
+}
+
+.text-content h4 {
+  color: #cc3300;
+  margin-top: 20px;
+}
+
+.text-content ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.image-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-content img {
+  max-width: 100%;
+  border-left: 6px solid #ff6600;
+  border-right: 6px solid #ff6600;
+}
