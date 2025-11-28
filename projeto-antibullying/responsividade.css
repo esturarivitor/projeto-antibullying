@@ -1,0 +1,107 @@
+/* 📱 RESPONSIVIDADE */
+@media (max-width: 900px) {
+    /* Mantenha o que você já tinha: */
+    .canto {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Mantenha o que você já tinha: */
+    #imagem1, .canto p {
+        width: 90%;
+    }
+
+    .conteudo h1 {
+        font-size: 1.4rem;
+        margin: 0 10px;
+    }
+
+    /* === NOVAS REGRAS PARA EMPILHAR O CONTEÚDO DA MATÉRIA === */
+    /* 1. Altera a direção do Flexbox principal (.conteudo) para empilhar itens (Imagem e Bloco de Texto) */
+    .conteudo {
+        flex-direction: column;
+        width: 95%; /* Ajusta o contêiner principal para a largura da tela */
+        align-items: center; /* Centraliza a imagem e o bloco de texto */
+    }
+
+    /* 2. Aplica a largura de 90% para a Imagem e para o Bloco de Texto */
+    #imagem1, .bloco-texto {
+        width: 90%;
+        /* Estas duas linhas são cruciais para anular as larguras fixas do desktop (45% e 50%) */
+        flex-basis: auto; 
+        max-width: none;
+        margin: 15px auto; /* Adiciona espaçamento e centraliza */
+    }
+    /* ======================================================= */
+}
+
+/* ===== Monitores full HD grandes (acima de 1600px) ===== */
+@media (min-width: 1600px) {
+    .conteudo {
+        max-width: 1400px;
+    }
+
+    .texto h2 {
+        font-size: 2.6rem;
+    }
+
+    .texto p {
+        font-size: 1.2rem;
+    }
+
+    .imagem img {
+        max-width: 600px;
+    }
+}
+
+/* ===== Monitores ultrawide (acima de 2000px) ===== */
+@media (min-width: 2000px) {
+    body {
+        background: linear-gradient(90deg, #0a0a0a 20%, #111 80%);
+    }
+
+    .conteudo {
+        max-width: 1800px;
+        padding: 3rem 4rem;
+    }
+
+    .texto-imagem {
+        gap: 5rem;
+    }
+
+    .texto {
+        font-size: 1.25rem;
+    }
+
+    .imagem img {
+        max-width: 750px;
+    }
+}
+
+/* ===== Monitores 4K (acima de 2560px) ===== */
+@media (min-width: 2560px) {
+    html {
+        font-size: 120%;
+    }
+
+    .conteudo {
+        max-width: 2200px;
+    }
+
+    .texto h2 {
+        font-size: 3rem;
+    }
+
+    .texto p {
+        font-size: 1.4rem;
+        line-height: 1.9;
+    }
+
+    .navbar {
+        padding: 2rem 6rem;
+    }
+
+    .rodape {
+        font-size: 1.1rem;
+    }
+}

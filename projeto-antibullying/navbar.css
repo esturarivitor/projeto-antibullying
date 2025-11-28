@@ -1,0 +1,131 @@
+/* ===== RESET BÁSICO ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== BASE ===== */
+body {
+    font-family: 'Anonymous Pro', 'Source Code Pro', 'Fira Code', 'JetBrains Mono', 'Cascadia Code', Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #fff;
+    color: #222;
+}
+
+/* ===== CABEÇALHO/HEAD (Container principal da linha da navegação) ===== */
+.head {
+    display: flex;
+    /* Garante que o Logo fique na esquerda e o grupo Menu+Busca na direita */
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px 25px;
+    flex-wrap: wrap;
+}
+
+/* ===== LOGO ===== */
+.logo {
+    font-weight: bold;
+    border: 2px solid #ff4500;
+    padding: 10px 15px;
+    color: #ff4500;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: white;
+    transition: all 0.3s ease;
+    margin-right: 25px;
+}
+
+.logo:hover {
+    background-color: #ff4500;
+    color: white;
+}
+
+/* ===== NAVBAR (A barra laranja) ===== */
+nav {
+    background: linear-gradient(38deg, #ff5100, #be3c00, #8a5905, rgb(168, 40, 1), #641400);
+    color: #ffffff;
+    /* Remova o padding do nav, o .head já tem */
+    padding: 0; 
+    position: relative;
+    /* Remove as propriedades flex que estavam aqui, o .head é o flex container principal */
+    /* 1. Torna o NAV um contêiner Flex */
+    display: flex; 
+    
+    /* 2. Empurra o conteúdo (Logo e Menu) para as extremidades opostas */
+    justify-content: space-between; 
+    
+    /* 3. Centraliza o logo e o menu verticalmente (Recomendado) */
+    align-items: center; 
+
+    /* Adicione um padding interno para dar respiro nas laterais e na altura */
+    padding: 10px 40px;
+}
+
+/* NOVO: AGRUPAMENTO MENU E BUSCA */
+.menu-and-search-group {
+    display: flex; /* Alinha o Menu (ul) e a Busca lado a lado */
+    align-items: center;
+    /* Define o afastamento entre o último link e a caixa de pesquisa */
+    gap: 30px; 
+}
+
+
+/* ===== MENU (ul.menu) ===== */
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 30px;
+    align-items: center;
+    margin: 0;
+    /* Removida a margem que poderia causar problemas já que a busca está fora do ul */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-family: 'Anonymous Pro', monospace;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+nav ul li a:hover {
+    color: #ffd700; /* amarelo dourado */
+    transform: scale(1.1);
+}
+
+
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 900px) {
+    /* Ajuste o .head para empilhar os elementos */
+    .head {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px; /* Adicionado para espaçar os itens empilhados */
+    }
+
+    /* O grupo de Menu e Busca também deve ser empilhado */
+    .menu-and-search-group {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    nav ul {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .search-wrapper {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .search-box {
+        width: 80%;
+        max-width: 300px;
+    }
+}

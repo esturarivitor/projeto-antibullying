@@ -1,0 +1,70 @@
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CORPO */
+body {
+    background-color: #ffffff;
+    color: #232222;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+header {
+    text-align: center;
+    border-bottom: 2px solid #dabf65;
+}
+
+
+/* CONTEÚDO PRINCIPAL */
+.conteudo {
+    text-align: center;
+    color: orange;
+    margin-top: 60px;
+}
+
+.conteudo h1 {
+    font-size: 1.8rem;
+}
+
+/* SEÇÃO COM IMAGEM E TEXTO LADO A LADO */
+.canto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px; /* espaço entre imagem e texto */
+    width: 80%;
+    margin: 60px auto;
+    flex-wrap: wrap; /* pra empilhar no mobile */
+}
+
+/* IMAGEM */
+#imagem1 {
+    border: 4px solid #ff4500;
+    border-radius: 20px;
+    background-color: #ff4500;
+    padding: 3px;
+    width: 45%;
+    max-width: 500px;
+    height: auto;
+}
+
+/* TEXTO */
+.canto p {
+    width: 50%;
+    font-size: 1.1rem;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.rodape {
+    background-color: #111;
+    text-align: center;
+    padding: 1rem;
+    border-top: 2px solid #dabf65;
+    font-size: 0.9rem;
+    color: #aaa;
+}

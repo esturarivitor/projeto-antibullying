@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 700px;
+}
+
+h1 {
+    color: #007bff; /* Azul */
+    text-align: center;
+    border-bottom: 3px solid #007bff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Estilo para a caixa de pergunta individual */
+.pergunta-box {
+    margin-bottom: 30px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #fafafa;
+}
+
+.pergunta-texto {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+/* Estilos para as opções de resposta */
+.opcao {
+    display: block;
+    padding: 10px;
+    margin-bottom: 8px;
+    background-color: #e9ecef;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.opcao:hover {
+    background-color: #dee2e6;
+}
+
+/* Cores de feedback (simulando as cores do terminal) */
+.correta {
+    background-color: #d4edda !important; /* Verde claro */
+    border: 1px solid #c3e6cb;
+}
+
+.errada {
+    background-color: #f8d7da !important; /* Vermelho claro */
+    border: 1px solid #f5c6cb;
+}
+
+.explicacao {
+    margin-top: 15px;
+    padding: 10px;
+    border-left: 5px solid #007bff;
+    background-color: #e7f0ff; /* Azul claro */
+}
+
+/* Estilo do botão */
+button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1em;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Resultado Final */
+#resultado-area h2 {
+    text-align: center;
+    color: #28a745;
+    margin-bottom: 15px;
+}
+
+/* Cores das classificações */
+.aprendiz {
+    color: #dc3545; /* Vermelho */
+    font-weight: bold;
+}
+
+.aliado {
+    color: #ffc107; /* Amarelo */
+    font-weight: bold;
+}
+
+.guardiao {
+    color: #28a745; /* Verde */
+    font-weight: bold;
+    font-size: 1.2em;
+}
